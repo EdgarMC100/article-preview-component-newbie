@@ -1,0 +1,134 @@
+:root {
+    --primary-font: "Manrope";
+    --primary-color: hsl(217, 19%, 35%);
+    --secondary-color: hsl(214, 17%, 51%);
+    --tertiary-color: hsl(212, 23%, 69%);
+    --quaternary-color: hsl(210, 46%, 95%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--quaternary-color);
+    font-family: var(--primary-font);
+    height: 100vh;
+    /* width: 100vw; */
+}
+
+div.wrapper{
+    height: inherit;
+    /* padding:4rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.article-card{
+    max-width: 680px;
+    background-color: white;
+    width: 730px;
+    height: 260px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 0.625rem;
+    /*box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05); */
+}
+.article-card .right{
+    /* border-bottom-right-radius: 0.625rem; */
+    /* border-top-right-radius: 0.625rem; */
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:1.8em;
+    /* padding-left: -em; */
+    padding-right: 2em;
+    padding-left: 2.2em;
+    
+}
+.article-card .left{
+    background-image: url(../assets/images/drawers.jpg);
+    /* background-position: left; */
+    background-size: cover;
+    width: 265px;
+    background-position: left;
+    border-top-left-radius:0.625rem;
+    border-bottom-left-radius:0.625rem;
+}
+.description{
+    width: 350px;
+}
+.article-card .right .description span.title{
+    color:var(--primary-color);
+    width: inherit;
+    font-weight: 700;
+    font-size: 19px;
+    display: block;
+    margin-bottom: .5em;
+}
+
+div.description .cart-text{
+    color: var(--secondary-color);
+    font-weight: 500 !important;
+    font-size: 13px;
+}
+
+div.author{
+    display:grid;
+    grid-template-columns: 1fr 5.9fr 1fr;
+    margin-top: 1em;
+    width: 100%;
+    /* width: 350px; */
+}
+
+div.author .avatar{
+    border-radius: 100%;
+    width: 31px;
+}
+
+div.author .info .name{
+    color:var(--primary-color);
+    font-weight: 700;
+    font-size: 13px;
+    display: block;
+    /* margin-bottom: 3em; */
+}
+
+div.author .info .date{
+    font-size: 9px;
+    display: block;
+    color: var(--tertiary-color);
+}
+
+div.btn-area .share-info{
+    display: none;
+}
+
+div.btn-area .share{
+    margin-top:.5em;
+    background-color: var(--quaternary-color);
+    border:none;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    fill:var(--primary-color);
+}
+
+div.btn-area .share svg{
+    padding-top:.2em
+}
+
+/* This code is used when we are using an img tag inside div */
+/* div.left img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+} */
