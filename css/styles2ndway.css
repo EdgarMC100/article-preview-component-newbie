@@ -15,6 +15,7 @@ body{
     background-color: var(--quaternary-color);
     font-family: var(--primary-font);
     height: 100vh;
+
     /* width: 100vw; */
 }
 
@@ -29,13 +30,14 @@ div.wrapper{
 }
 
 .article-card{
-    max-width: 680px;
+    max-width: 700px;
     background-color: white;
-    width: 730px;
-    height: 260px;
+    width: 700px;
+    height: 270px;
     display:grid;
     grid-template-columns: 1fr 2fr;
     border-radius: 0.625rem;
+    
     /*box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
       0 4px 6px -2px rgba(0, 0, 0, 0.05); */
 }
@@ -56,7 +58,7 @@ div.wrapper{
     background-image: url(../assets/images/drawers.jpg);
     /* background-position: left; */
     background-size: cover;
-    width: 265px;
+    width: 275px;
     background-position: left;
     border-top-left-radius:0.625rem;
     border-bottom-left-radius:0.625rem;
@@ -82,7 +84,7 @@ div.description .cart-text{
 div.author{
     display:grid;
     grid-template-columns: 1fr 5.9fr 1fr;
-    margin-top: 1em;
+    margin-top: 1.5em;
     width: 100%;
     /* width: 350px; */
 }
@@ -111,19 +113,97 @@ div.btn-area .share-info{
 }
 
 div.btn-area .share{
-    margin-top:.5em;
+    margin-left:.5em;
+    margin-top:0em;
     background-color: var(--quaternary-color);
     border:none;
     width: 30px;
     height: 30px;
     border-radius: 100%;
     fill:var(--primary-color);
+    outline-style: none;
 }
-
+.dark{
+    background-color: var(--secondary-color) !important;
+    fill: var(--quaternary-color) !important;
+}
 div.btn-area .share svg{
     padding-top:.2em
 }
 
+div.social-networks{
+    background:var(--primary-color);
+    display: none;
+    grid-template-columns: 1fr;
+    width: 220px;
+    height: 55px;
+    position: absolute;
+    transform:translate(296px,16px);
+    
+    /* transform:translateY(-20px); */
+    /* bottom: -21px; */
+    border-radius: 10px;
+    align-content: center;
+    justify-items: center;  
+}
+
+.visible{
+    display: grid !important;
+}
+
+/* .not-visible{
+    display: none;
+} */
+
+div.social-networks:before{
+        border-top: 15px solid var(--primary-color);
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        top: 49px;
+        left: 93px;
+}
+
+div.social-netwroks .social-info{
+    display:flex;
+    flex-flow: row nowrap;
+}
+
+div.social-networks .social-info li{
+    display: inline-block;
+    margin: 0 .3em;
+}
+div.social-networks .social-info li a img{
+    width: 1em;
+    height: 1em;
+}
+
+div.social-networks .social-info > div{
+    /* display: inline-block; */
+}
+div.social-networks .social-info > span{
+    color:var(--tertiary-color);
+    font-size: .6em;
+    position:relative;
+    bottom: .35em;
+    margin-right: .5em;
+    font-weight: 500;
+    letter-spacing: .5em;
+    display: inline-block;
+}
+
+
+
+
+@media screen and (max-width:900px){
+    body{
+        background-color: red;
+    }
+}
 /* This code is used when we are using an img tag inside div */
 /* div.left img{
     height: 100%;
