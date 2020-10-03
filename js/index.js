@@ -5,19 +5,23 @@
 
 
     let mouseoverandout = function(event){
-        // console.log(event);
+        console.log(window.outerWidth);
         if(window.outerWidth < 450){
             // alert('hi')
-            share.classList.toggle('visible')
+            // alert('in');
+            share.classList.toggle('visible') ? element.style.marginTop = "15px" : element.style.marginTop = "0px";
             element.classList.toggle('dark');
-            // btnarea.style.zIndex = 100;
-            btnarea.style.marginTop = "15px";
+            element.style.zIndex = 100;
+            // element.style.marginTop = "15px";
+            
+            // btnarea.style.marginTop = "15px";
         }else{
             share.classList.toggle('visible');
             element.classList.toggle('dark');
         }
 
     }
+
     element.addEventListener('mouseover',mouseoverandout);
     element.addEventListener('mouseout',mouseoverandout);
      //,()=>{
