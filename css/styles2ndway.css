@@ -203,7 +203,7 @@ div.social-networks .social-info > span{
     border-bottom-left-radius: 0.625rem;
 } */
 
-@media screen and (max-width:375px){
+@media screen and (max-width:450px){
     div.wrapper{
         height: 100vh;
         display:flex;
@@ -247,6 +247,29 @@ div.social-networks .social-info > span{
     }
 
     .article-card .right .description .cart-text{
+        font-size: .8em;
+    }
+
+    .article-card .right .author .btn-area{
+        z-index:100;
+        /* margin-top: 0px; */
+    }
+
+    div.social-networks{
+        display: none;
+        transform: translate(0px,215px);
+        width: 300px;
+        height: 75px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        justify-items: left;
+    }
+
+    div.social-networks .social-info {
+        margin-left:25px;
+    }
+
+    div.social-networks .social-info span{
         font-size: .8em;
     }
     

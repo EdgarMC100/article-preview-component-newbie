@@ -1,12 +1,22 @@
 
     let element = document.getElementById('social');
     let share = document.getElementsByClassName('social-networks')[0];
+    let btnarea = document.getElementsByClassName('btn-area')[0]
 
 
     let mouseoverandout = function(event){
-        console.log(event);
-        share.classList.toggle('visible');
-        element.classList.toggle('dark');
+        // console.log(event);
+        if(window.outerWidth < 450){
+            // alert('hi')
+            share.classList.toggle('visible')
+            element.classList.toggle('dark');
+            // btnarea.style.zIndex = 100;
+            btnarea.style.marginTop = "15px";
+        }else{
+            share.classList.toggle('visible');
+            element.classList.toggle('dark');
+        }
+
     }
     element.addEventListener('mouseover',mouseoverandout);
     element.addEventListener('mouseout',mouseoverandout);
