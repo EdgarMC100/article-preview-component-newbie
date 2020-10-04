@@ -203,7 +203,7 @@ div.social-networks .social-info > span{
     border-bottom-left-radius: 0.625rem;
 } */
 
-@media screen and (max-width:450px){
+@media screen and (max-width:850px) and (orientation:portrait){
     div.wrapper{
         height: 100vh;
         display:flex;

@@ -1,50 +1,58 @@
 
     let element = document.getElementById('social');
-    let share = document.getElementsByClassName('social-networks')[0];
+    // console.log(element.style.marginTop = "16px")
+    let socialNetworks = document.getElementsByClassName('social-networks')[0];
+    console.log(window.screen.orientation);
     let btnarea = document.getElementsByClassName('btn-area')[0]
 
 
-    let mouseoverandout = function(event){
+    let hideOrShowSocialNetworks = function(event){
         console.log(window.outerWidth);
-        if(window.outerWidth < 450){
+        if(window.outerWidth < 850 && window.screen.orientation.type == "portrait-primary"){
             // alert('hi')
             // alert('in');
-            share.classList.toggle('visible') ? element.style.marginTop = "15px" : element.style.marginTop = "0px";
+            socialNetworks.classList.toggle('visible') ? element.style.marginTop = "16px" : element.style.marginTop = "0px";
             element.classList.toggle('dark');
             element.style.zIndex = 100;
             // element.style.marginTop = "15px";
             
             // btnarea.style.marginTop = "15px";
         }else{
-            share.classList.toggle('visible');
+            console.log("else")
+            socialNetworks.classList.toggle('visible');
             element.classList.toggle('dark');
+            
         }
 
     }
 
-    element.addEventListener('mouseover',mouseoverandout);
-    element.addEventListener('mouseout',mouseoverandout);
+    element.addEventListener('click',hideOrShowSocialNetworks);
+    socialNetworks.getElementsByClassName('social-info')[0].children[1].childNodes.forEach(element => {
+        element.addEventListener('click',hideOrShowSocialNetworks);
+    });
+    // document.addEventListener('click',hideOrShowSocialNetworks);
+    // element.addEventListener('mouseout',hideOrShowSocialNetworks);
      //,()=>{
         //Using tootgle method
-        // share.classList.toggle('visible');
+        // socialNetworks.classList.toggle('visible');
         // element.classList.toggle('dark');
         //1st way using conditional operator(ternary) ECMAScript 2015
-        // share.classList.contains('visible')?
-        // share.classList.remove('visible'): 
-        // share.classList.add('visible');
+        // socialNetworks.classList.contains('visible')?
+        // socialNetworks.classList.remove('visible'): 
+        // socialNetworks.classList.add('visible');
 
         //Common conditional
-        // if(!share.classList.contains("visible")){
-        //     share.classList.add("visible")
+        // if(!socialNetworks.classList.contains("visible")){
+        //     socialNetworks.classList.add("visible")
         // }else{
-        //     share.classList.remove("visible")
+        //     socialNetworks.classList.remove("visible")
         // }
-        // if(share.classList.contains("not-visible")){
-        //     share.classList.remove("not-visible")
-        //     share.classList.add("visible")
+        // if(socialNetworks.classList.contains("not-visible")){
+        //     socialNetworks.classList.remove("not-visible")
+        //     socialNetworks.classList.add("visible")
         //     console.log("in")
         // }else{
-        //     share.classList.remove("visible");
-        //     share.classList.add("not-visible")
+        //     socialNetworks.classList.remove("visible");
+        //     socialNetworks.classList.add("not-visible")
         // }
     // })
