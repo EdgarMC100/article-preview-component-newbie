@@ -25,7 +25,7 @@
         }
 
     }
-
+    
     element.addEventListener('click',hideOrShowSocialNetworks);
     socialNetworks.getElementsByClassName('social-info')[0].children[1].childNodes.forEach(element => {
         element.addEventListener('click',hideOrShowSocialNetworks);

@@ -1,9 +1,9 @@
 :root {
     --primary-font: "Manrope";
-    --primary-color: hsl(217, 19%, 35%);
-    --secondary-color: hsl(214, 17%, 51%);
-    --tertiary-color: hsl(212, 23%, 69%);
-    --quaternary-color: hsl(210, 46%, 95%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
 *{
@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--quaternary-color);
+    background-color: var(--light-grayish-blue);
     font-family: var(--primary-font);
     height: 100vh;  
     /* width: 100vw; */
@@ -66,7 +66,7 @@ div.wrapper{
     width: 350px;
 }
 .article-card .right .description span.title{
-    color:var(--primary-color);
+    color:var(--very-dark-grayish-blue);
     width: inherit;
     font-weight: 700;
     font-size: 19px;
@@ -75,7 +75,7 @@ div.wrapper{
 }
 
 div.description .cart-text{
-    color: var(--secondary-color);
+    color: var(--desaturated-dark-blue);
     font-weight: 500 !important;
     font-size: 13px;
 }
@@ -94,7 +94,7 @@ div.author .avatar{
 }
 
 div.author .info .name{
-    color:var(--primary-color);
+    color:var(--very-dark-grayish-blue);
     font-weight: 700;
     font-size: 13px;
     display: block;
@@ -104,7 +104,7 @@ div.author .info .name{
 div.author .info .date{
     font-size: 9px;
     display: block;
-    color: var(--tertiary-color);
+    color: var(--grayish-blue);
 }
 
 div.btn-area .share-info{
@@ -114,24 +114,24 @@ div.btn-area .share-info{
 div.btn-area .share{
     margin-left:.5em;
     margin-top:0em;
-    background-color: var(--quaternary-color);
+    background-color: var(--light-grayish-blue);
     border:none;
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    fill:var(--primary-color);
+    fill:var(--very-dark-grayish-blue);
     outline-style: none;
 }
 .dark{
-    background-color: var(--secondary-color) !important;
-    fill: var(--quaternary-color) !important;
+    background-color: var(--desaturated-dark-blue) !important;
+    fill: var(--light-grayish-blue) !important;
 }
 div.btn-area .share svg{
     padding-top:.2em
 }
 
 div.social-networks{
-    background:var(--primary-color);
+    background:var(--very-dark-grayish-blue);
     display: none;
     grid-template-columns: 1fr;
     width: 220px;
@@ -155,7 +155,7 @@ div.social-networks{
 } */
 
 div.social-networks:before{
-        border-top: 15px solid var(--primary-color);
+        border-top: 15px solid var(--very-dark-grayish-blue);
         border-bottom: 15px solid transparent;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
@@ -185,7 +185,7 @@ div.social-networks .social-info > div{
     /* display: inline-block; */
 }
 div.social-networks .social-info > span{
-    color:var(--tertiary-color);
+    color:var(--grayish-blue);
     font-size: .6em;
     position:relative;
     bottom: .35em;
