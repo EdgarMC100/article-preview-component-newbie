@@ -59,7 +59,7 @@ div.wrapper{
     color:var(--very-dark-grayish-blue);
     width: inherit;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 15px;
     display: block;
     margin-bottom: .5em;
     padding-right: 45px;
@@ -128,7 +128,7 @@ div.social-networks{
     width: 220px;
     height: 55px;
     position: absolute;
-    transform:translate(296px,16px);
+    transform:translate(303px,16px);
     
     /* transform:translateY(-20px); */
     /* bottom: -21px; */
@@ -200,8 +200,6 @@ div.social-networks .social-info > span{
         /* flex-direction: row; */
         height: 300px;
         width: 100%;
-        padding-left: 1.8em;
-        padding-right: 1.8em;
     }
     .article-card .left{
         height: 200px;
