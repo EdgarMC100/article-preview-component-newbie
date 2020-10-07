@@ -53,7 +53,7 @@ div.wrapper{
     border-bottom-left-radius:0.625rem;
 }
 .description{
-    width: 350px;
+    width: 366px;
 }
 .article-card .right .description span.title{
     color:var(--very-dark-grayish-blue);
@@ -62,6 +62,7 @@ div.wrapper{
     font-size: 19px;
     display: block;
     margin-bottom: .5em;
+    padding-right: 45px;
 }
 
 div.description .cart-text{
