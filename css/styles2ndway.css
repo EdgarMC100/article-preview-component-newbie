@@ -40,9 +40,9 @@ div.wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top:1.8em;
-    padding-right: 2em;
-    padding-left: 2.2em;
+    padding-top:2.5em;
+    padding-right: 2.5rem;
+    padding-left: 2.5em;
     
 }
 .article-card .left{
